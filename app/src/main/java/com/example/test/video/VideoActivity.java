@@ -52,6 +52,7 @@ public class VideoActivity extends Activity {
         if (isFinishing()) {
             Log.d("VideoActivity", "onDestroy");
             bcVideoView.getEventEmitter().off();
+            bcVideoView = null;
         }
     }
 
